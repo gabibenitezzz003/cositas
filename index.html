@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RESERVAS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+    
+        <h1>RESERVAS </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Reserva tu Cabaña</h2>
+            <form id="reservation-form">
+                <div class="form-row">
+                    <label for="check-in-date">Fecha de Ingreso:</label>
+                    <input type="date" id="check-in-date" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="check-out-date">Fecha de Salida:</label>
+                    <input type="date" id="check-out-date" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="payment-method">Método de Pago:</label>
+                    <select id="payment-method">
+                        <option value="tarjeta">Tarjeta de Crédito</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="transferencia">Transferencia Bancaria</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="cancel-reservation">¿Cancelar Reserva?</label>
+                    <input type="checkbox" id="cancel-reservation">
+                </div>
+
+                <div class="form-row">
+                    <button id="submit-button" type="submit">Enviar Reserva</button>
+                </div>
+            </form>
+            <p class="disclaimer">Al hacer una reserva, aceptas nuestros términos y condiciones.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Derechos de autor - Complejo de Cabañas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
